@@ -12,7 +12,7 @@ int main(){
 		if(pid == 0)
 			break;
 	}
-
+//
 	if(pid > 0){
 		printf("parent pid = %d, ppid = %d, pgid = %d\n", getpid(), getppid(), getpgrp());
 		while(1)
