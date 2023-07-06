@@ -1,0 +1,10 @@
+#!/bin/bash
+
+PID=`cat server_config.conf`
+
+if [ $1 = "stop" ]
+then kill -10 $PID
+elif [ $1="cont" ]
+then kill -12 $PID
+fi
+
